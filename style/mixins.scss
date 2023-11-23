@@ -28,3 +28,11 @@
   background-color: $bgColor;
   border-radius: $radius;
 }
+
+@mixin overflow($line-clamp) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+}

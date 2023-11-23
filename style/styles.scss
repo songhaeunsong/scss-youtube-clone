@@ -47,7 +47,7 @@ header {
 .search {
   @include flex-div(row);
   justify-content: space-between;
-  width: 500px;
+  width: 35vw;
   background-color: $search-input-color;
   border: 1px solid $search-border-color;
   border-right: none;
@@ -55,7 +55,7 @@ header {
   padding: 11px 17px;
 
   input {
-    width: 400px;
+    width: 80%;
     background-color: $search-input-color;
     border: 0;
     padding: 0 2px;
@@ -121,6 +121,18 @@ main {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .search-wrapper {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  .filter {
+    display: none;
+  }
+}
+
 /* section */
 section {
   width: 100%;
@@ -129,9 +141,9 @@ section {
   justify-content: space-between;
 }
 .filter-wrapper {
+  width: 100%;
   @include flex-div(row);
   padding: 4px;
-
   .filter {
     padding: 7.5px 10px;
     margin-right: 11px;
@@ -182,12 +194,14 @@ section {
       h4 {
         font-size: $title-font-size;
         margin: 0;
+        @include overflow(3);
       }
       p {
         font-size: $primary-font-size;
         color: $sub-font-color;
         padding: 0;
         margin: 2px 0;
+        @include overflow(1);
       }
     }
   }
