@@ -1,6 +1,7 @@
 body {
   background-color: #0f0f0f;
   color: #f1f1f1;
+  width: 100%;
 }
 
 /* header */
@@ -83,7 +84,7 @@ header > div {
 .search-button {
   background-color: #222222;
   border: 1px solid #272727;
-  padding: 6px 10px;
+  padding: 6px 15px;
   border-radius: 0 50px 50px 0;
   width: 65px;
   height: 39.5px;
@@ -122,6 +123,7 @@ header > div {
 /* aside */
 main {
   display: flex;
+  width: 100%;
 }
 main aside {
   width: 95px;
@@ -158,10 +160,11 @@ main aside ul {
 
 /* section */
 section {
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -169,11 +172,11 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3px;
+  padding: 4px;
 }
 .filter-wrapper .filter {
-  padding: 8px 10px;
-  margin-right: 9px;
+  padding: 7.5px 10px;
+  margin-right: 11px;
   background-color: #272727;
   border-radius: 7px;
   font-size: 14px;
@@ -182,6 +185,59 @@ section {
   background-color: #f1f1f1;
   color: #272727;
   font-size: 14px;
+}
+
+.videos {
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.videos article {
+  flex: 1 0 20%;
+  padding: 10px;
+}
+.videos article .video {
+  width: 100%;
+  height: auto;
+}
+.videos article .video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.videos article .video img {
+  border-radius: 10px;
+}
+.videos article .info {
+  width: 100%;
+  display: flex;
+}
+.videos article .info .uploader-profile {
+  width: 40px;
+  padding: 13px 10px;
+  height: 100px;
+}
+.videos article .info .uploader-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.videos article .info .video-info {
+  padding: 13px 0;
+  height: 100%;
+}
+.videos article .info h4 {
+  font-size: 16px;
+  margin: 0;
+}
+.videos article .info p {
+  font-size: 14px;
+  color: #aaaaaa;
+  padding: 0;
+  margin: 2px 0;
 }
 
 /*# sourceMappingURL=compiledStyle.css.map */

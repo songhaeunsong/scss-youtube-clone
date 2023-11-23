@@ -4,6 +4,7 @@
 body {
   background-color: $primary-bg-color;
   color: $primary-font-color;
+  width: 100%;
 }
 
 /* header */
@@ -64,7 +65,7 @@ header {
 .search-button {
   background-color: $primary-color;
   border: 1px solid $search-border-color;
-  padding: 6px 10px;
+  padding: 6px 15px;
   border-radius: 0 50px 50px 0;
   @include cover-image-div(65px, 39.5px);
 }
@@ -91,6 +92,7 @@ header {
 
 main {
   display: flex;
+  width: 100%;
 
   aside {
     width: 95px;
@@ -121,17 +123,18 @@ main {
 
 /* section */
 section {
-  height: 100%;
+  width: 100%;
   @include flex-div(column);
+  align-items: baseline;
   justify-content: space-between;
 }
 .filter-wrapper {
   @include flex-div(row);
-  padding: 5px;
+  padding: 4px;
 
   .filter {
-    padding: 8px 10px;
-    margin-right: 9px;
+    padding: 7.5px 10px;
+    margin-right: 11px;
     background-color: $search-border-color;
     border-radius: 7px;
     font-size: $primary-font-size;
@@ -140,5 +143,52 @@ section {
     background-color: $primary-font-color;
     color: $search-border-color;
     font-size: $primary-font-size;
+  }
+}
+
+.videos {
+  width: 100%;
+  padding: 4px;
+  @include flex-div(row);
+  flex-wrap: wrap;
+
+  article {
+    flex: 1 0 20%;
+    padding: 10px;
+
+    .video {
+      @include cover-image-div(100%, auto);
+      img {
+        border-radius: 10px;
+      }
+    }
+    .info {
+      width: 100%;
+      display: flex;
+      .uploader-profile {
+        width: 40px;
+        padding: 13px 10px;
+        height: 100px;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+        }
+      }
+      .video-info {
+        padding: 13px 0;
+        height: 100%;
+      }
+      h4 {
+        font-size: $title-font-size;
+        margin: 0;
+      }
+      p {
+        font-size: $primary-font-size;
+        color: $sub-font-color;
+        padding: 0;
+        margin: 2px 0;
+      }
+    }
   }
 }
