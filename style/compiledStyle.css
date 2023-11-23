@@ -3,12 +3,14 @@ body {
   color: #f1f1f1;
 }
 
+/* header */
 header {
   padding: 0 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 header > div {
   display: flex;
@@ -115,6 +117,71 @@ header > div {
 .header-right {
   width: 300px;
   justify-content: flex-end;
+}
+
+/* aside */
+main {
+  display: flex;
+}
+main aside {
+  width: 95px;
+}
+main aside ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.nav-icon {
+  width: 20px;
+}
+.nav-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-feat {
+  font-size: 10px;
+  width: 62px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.nav-feat:hover {
+  background-color: #222222;
+  border-radius: 10px;
+}
+
+/* section */
+section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+}
+.filter-wrapper .filter {
+  padding: 8px 10px;
+  margin-right: 9px;
+  background-color: #272727;
+  border-radius: 7px;
+  font-size: 14px;
+}
+.filter-wrapper .selected-filter {
+  background-color: #f1f1f1;
+  color: #272727;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=compiledStyle.css.map */

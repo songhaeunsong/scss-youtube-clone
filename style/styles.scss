@@ -5,6 +5,9 @@ body {
   background-color: $primary-bg-color;
   color: $primary-font-color;
 }
+
+/* header */
+
 header {
   padding: 0 16px;
   @include flex-div(row);
@@ -13,6 +16,7 @@ header {
   > div {
     @include flex-div(row);
   }
+  margin-bottom: 15px;
 }
 
 .menu-icon {
@@ -81,4 +85,60 @@ header {
 .header-right {
   width: 300px;
   justify-content: flex-end;
+}
+
+/* aside */
+
+main {
+  display: flex;
+
+  aside {
+    width: 95px;
+
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0;
+    }
+  }
+}
+
+.nav-icon {
+  @include image-div(20px);
+}
+.nav-feat {
+  font-size: 10px;
+  width: 62px;
+  height: 60px;
+  @include flex-div(column);
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.nav-feat:hover {
+  background-color: $primary-color;
+  border-radius: 10px;
+}
+
+/* section */
+section {
+  height: 100%;
+  @include flex-div(column);
+  justify-content: space-between;
+}
+.filter-wrapper {
+  @include flex-div(row);
+  padding: 5px;
+
+  .filter {
+    padding: 8px 10px;
+    margin-right: 9px;
+    background-color: $search-border-color;
+    border-radius: 7px;
+    font-size: $primary-font-size;
+  }
+  .selected-filter {
+    background-color: $primary-font-color;
+    color: $search-border-color;
+    font-size: $primary-font-size;
+  }
 }
