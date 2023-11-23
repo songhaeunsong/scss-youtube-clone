@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #0f0f0f;
   color: #f1f1f1;
@@ -180,7 +181,7 @@ section {
 }
 
 .filter-wrapper {
-  width: 100%;
+  width: calc(100% - 28px);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -200,7 +201,7 @@ section {
 }
 
 .videos {
-  width: 100%;
+  width: calc(100% - 28px);
   padding: 4px;
   display: flex;
   flex-direction: row;
@@ -208,7 +209,7 @@ section {
   flex-wrap: wrap;
 }
 .videos article {
-  flex: 1 0 20%;
+  flex: 1 0 calc(25% - 20px);
   padding: 10px;
 }
 .videos article .video {
@@ -260,6 +261,16 @@ section {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 1000px) {
+  .videos article {
+    flex: 1 0 calc(33.333% - 20px); /* 화면 폭이 800px 이하일 때는 3개씩 표시 */
+  }
+}
+@media screen and (max-width: 700px) {
+  .videos article {
+    flex: 1 0 100%; /* 작은 화면에서는 한 행에 하나의 열만 표시 */
+  }
 }
 
 /*# sourceMappingURL=compiledStyle.css.map */

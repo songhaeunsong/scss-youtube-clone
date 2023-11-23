@@ -141,7 +141,7 @@ section {
   justify-content: space-between;
 }
 .filter-wrapper {
-  width: 100%;
+  width: calc(100% - 28px);
   @include flex-div(row);
   padding: 4px;
   .filter {
@@ -159,13 +159,13 @@ section {
 }
 
 .videos {
-  width: 100%;
+  width: calc(100% - 28px);
   padding: 4px;
   @include flex-div(row);
   flex-wrap: wrap;
 
   article {
-    flex: 1 0 20%;
+    flex: 1 0 calc(25% - 20px);
     padding: 10px;
 
     .video {
@@ -203,6 +203,18 @@ section {
         margin: 2px 0;
         @include overflow(1);
       }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    article {
+      flex: 1 0 calc(33.333% - 20px); /* 화면 폭이 800px 이하일 때는 3개씩 표시 */
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    article {
+      flex: 1 0 100%; /* 작은 화면에서는 한 행에 하나의 열만 표시 */
     }
   }
 }
