@@ -5,78 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My YouTube</title>
+    <link rel="stylesheet" href="compiledStyle.css" />
   </head>
   <body>
-    <div>
-      <header class="gnb">
-        <div>
-          <div class="menu-icon">
-            <img src="/img/headerImg/menu-icon.png" alt="menu" />
-          </div>
-          <div class="youtube-logo">
-            <img src="/img/headerImg/youtube-logo.png" alt="youtube-logo" />
-          </div>
+    <header>
+      <div class="flex-div header-left">
+        <div class="menu-icon">
+          <img src="img/headerImg/menu-icon.png" alt="menu" />
         </div>
-        <div>
-          <div class="search">
-            <input type="text" placeholder="검색" />
-            <img src="/img/headerImg/keyboard-icon.png" alt="keyboard" />
-            <button>
-              <img src="/img/headerImg/search-icon.png" alt="search" />
-            </button>
-          </div>
-          <div class="voice">
-            <img src="/img/headerImg/voice.png" alt="voice" />
-          </div>
+        <div class="youtube-logo">
+          <img src="img/headerImg/youtube-logo.png" alt="youtube-logo" />
         </div>
-        <div>
-          <button class="making-video">
-            <img src="/img/headerImg/making-icon.png" alt="making-video" />
-          </button>
-          <button class="alarm">
-            <img src="/img/headerImg/alarm.png" alt="alarm" />
-          </button>
-          <div class="profile">
-            <img src="/img/headerImg/my-profile.png" alt="profile" />
-          </div>
+      </div>
+      <div class="flex-div">
+        <div class="search">
+          <input type="text" placeholder="검색" />
+          <img src="img/headerImg/keyboard-icon.png" alt="keyboard" />
         </div>
-      </header>
-      <main>
-        <aside>
-          <ul class="basic-feat">
-            <li>홈</li>
-            <li>Shorts</li>
-            <li>구독</li>
-            <li>YouTube Music</li>
-          </ul>
-          <hr />
-          <ul class="my-feat">
-            <li>내 채널</li>
-            <li>시청 기록</li>
-            <li>내 동영상</li>
-            <li>나중에 볼 동영상</li>
-            <li>오프라인 저장 동영상</li>
-          </ul>
-          <hr />
-          <ul class="subscribe-feat">
-            <li>문복희</li>
-            <li>기분Jazz네</li>
-            <li>때껄룩</li>
-            <li>조현아의 목요일 밤</li>
-          </ul>
-        </aside>
-        <section>
-          <div class="videoFilters"></div>
-          <div class="videos">
-            <article class="video"></article>
-            <article class="video"></article>
-            <article class="video"></article>
-            <article class="video"></article>
-            <article class="video"></article>
-            <article class="video"></article>
-          </div>
-        </section>
-      </main>
-    </div>
+        <button class="search-button">
+          <img src="img/headerImg/search-icon.png" alt="search" />
+        </button>
+        <div class="voice">
+          <img src="img/headerImg/voice.png" alt="voice" />
+        </div>
+      </div>
+      <div class="flex-div header-right">
+        <button class="user-activity making-video">
+          <img src="img/headerImg/making-icon.png" alt="making-video" />
+        </button>
+        <button class="user-activity alarm">
+          <img src="img/headerImg/alarm.png" alt="alarm" />
+        </button>
+        <div class="profile">
+          <img src="img/headerImg/my-profile.png" alt="profile" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <ul class="basic-feat">
+          <li>홈</li>
+          <li>Shorts</li>
+          <li>구독</li>
+          <li>YouTube Music</li>
+        </ul>
+        <hr />
+        <ul class="my-feat">
+          <li>내 채널</li>
+          <li>시청 기록</li>
+          <li>내 동영상</li>
+          <li>나중에 볼 동영상</li>
+          <li>오프라인 저장 동영상</li>
+        </ul>
+        <hr />
+        <ul class="subscribe-feat">
+          <li>문복희</li>
+          <li>기분Jazz네</li>
+          <li>때껄룩</li>
+          <li>조현아의 목요일 밤</li>
+        </ul>
+      </aside>
+      <section>
+        <div class="videoFilters"></div>
+        <div class="videos">
+          <article class="video"></article>
+          <article class="video"></article>
+          <article class="video"></article>
+          <article class="video"></article>
+          <article class="video"></article>
+          <article class="video"></article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
