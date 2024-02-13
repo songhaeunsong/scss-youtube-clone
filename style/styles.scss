@@ -1,5 +1,4 @@
-@import "variables";
-@import "mixins";
+@import "_variables", "_mixins";
 
 body {
   background-color: $primary-bg-color;
